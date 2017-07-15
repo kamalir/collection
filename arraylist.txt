@@ -1,0 +1,75 @@
+1.write a java program using arraylist to get employee details 
+id,age,name,salary
+i)add minimum 5 employee details
+ii)display it in proper order
+iii)display the name to employee having highest salary
+iv)display the details of salary
+package collection;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.ListIterator;
+
+public class Aray {
+	 void details()
+	{
+		 ArrayList<Integer> Id=new ArrayList<Integer>();
+	     ArrayList<String> name=new ArrayList<String>();
+		 ArrayList<Integer> age=new ArrayList<Integer>();
+	     ArrayList<Integer> sal=new ArrayList<Integer>();
+			
+		Id.add(12);
+		Id.add(234);
+		Id.add(567);
+		Id.add(890);
+		Id.add(1000);
+		Collections.sort(Id);
+		for(int i:Id)
+		{
+			System.out.println(i);
+		}
+	name.add("kamali");
+	name.add("karthik");
+	name.add("seenu");
+    name.add("balaji");
+    name.add("bala");
+    Collections.sort(name);
+    for(String nam:name)
+    {
+    	System.out.println(nam);
+    }
+	age.add(12);
+	age.add(23);
+	age.add(25);
+	age.add(27);
+	age.add(40);
+	age.add(45);
+	Collections.sort(age);
+	for(int j:age){
+		System.out.println(j);
+	}
+	sal.add(100);
+	sal.add(150);
+	sal.add(34000);
+	sal.add(45000);
+	sal.add(500);
+	Collections.sort(sal);
+	for(int k:sal)
+	{
+		System.out.println(k);
+	}
+	System.out.println(sal);
+	Integer s=Collections.max(sal);
+	System.out.println("the highest salary is"+s);
+	Iterator l=name.iterator();
+	
+
+	
+	
+	
+	}
+	public static void main(String a[])
+	{
+		Aray a1=new Aray();
+		a1.details();
